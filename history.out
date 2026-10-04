@@ -1,0 +1,59 @@
+    1  sudo apt update && sudo apt upgrade
+    2  sudo apt-get update
+    3  sudo dnf install apt
+    4  sudo apt update && sudo apt upgrade
+    5  mkdir HW1
+    6  ls
+    7  cd HW1
+    8  ls
+    9  useradd -u 1234 user1
+   10  sudo useradd -u 1234 user1
+   11  users
+   12  man usermod
+   13  groupadd students
+   14  sudo groupadd students
+   15  sudo usermod -G students user1
+   16  cat /etc/paassw
+   17  cat /etc/passw
+   18  cat /etc/passwd
+   19  cat /etc/group
+   20  man usermod | grep password
+   21  man chage
+   22  sudo chage -m 80 -M 90 user1
+   23  sudo chage -l user1
+   24  sudo chage -m 0 user1
+   25  sudo chage -l user1
+   26  man find
+   27  sudo find / -perm -4000
+   28  ls -la /usr/bin/sudo
+   29  ps -eo pid,ruid,euid,ruser,euser,comm | awk 'NR == 1 || ($2>=1000 && $3==0)
+   30  ps -eo pid,ruid,euid,ruser,euser,comm | awk 'NR == 1 || ($2>=1000 && $3==0) print
+
+
+   31  ps
+   32  ps -eo pid,ruid,euid,ruser,euser,comm
+   33  ps -eo pid,ruid,euid,ruser,euser,comm | awk 'NR == 1 || ($2>=1000 && $3==0) print'
+   34  ps -eo pid,ruid,euid,ruser,euser,comm | awk 'NR == 1 || ($2>=1000 && $3==0)'
+   35  cp /usr/bin/cat ./mycat
+   36  ls
+   37  sudo echo "SUID is working" > /root/hw1.txt
+   38  sudo bash -c 'echo "SUID is working" > /root/hw1.txt'
+   39  sudo cat /root/hw1.txt
+   40  ./mycat /root/hw1.txt
+   41  sudo chown root ./mycat
+   42  sudo chmod u+s ./mycat
+   43  ls -l mycat 
+   44  ./mycat /root/hw1.txt
+   45  cp /usr/bin/chown ./mychown
+   46  touch ./testfile.txt
+   47  ls -l testfile.txt 
+   48  chown user1 testfile.txt 
+   49  ./mychown user1 testfile.txt 
+   50  sudo setcap cap_chown ./mychown 
+   51  sudo setcap cap_chown+ep ./mychown 
+   52  ./mychown user1 testfile.txt 
+   53  ls -l testfile.txt 
+   54  which date
+   55  sudo visudo
+   56  sudo -l -U user1
+   57  history > ./history.out

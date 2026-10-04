@@ -1,0 +1,66 @@
+  Файл: /home/user1
+  Размер: 4096      	Блоков: 8          Блок В/В: 4096   каталог
+Устройство: 8/4	Инода: 1179864     Ссылки: 2
+Доступ: (0700/drwx------)  Uid: ( 1234/   user1)   Gid: ( 1234/   user1)
+Контекст: unconfined_u:object_r:user_home_dir_t:s0
+Доступ:        2026-10-04 21:29:48.254780367 +0300
+Модифицирован: 2026-10-04 21:10:14.577505496 +0300
+Изменён:       2026-10-04 21:10:14.577505496 +0300
+Создан:        2026-10-04 21:10:14.571505495 +0300
+  Файл: ./mycat
+  Размер: 36568     	Блоков: 72         Блок В/В: 4096   обычный файл
+Устройство: 8/4	Инода: 1180575     Ссылки: 1
+Доступ: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: ( 1000/nzhidkov)
+Контекст: unconfined_u:object_r:user_home_t:s0
+Доступ:        2026-10-04 22:03:45.794453265 +0300
+Модифицирован: 2026-10-04 22:01:11.903402454 +0300
+Изменён:       2026-10-04 22:03:17.836444023 +0300
+Создан:        2026-10-04 22:01:11.903402454 +0300
+  Файл: ./mychown
+  Размер: 65840     	Блоков: 144        Блок В/В: 4096   обычный файл
+Устройство: 8/4	Инода: 1180577     Ссылки: 1
+Доступ: (0755/-rwxr-xr-x)  Uid: ( 1000/nzhidkov)   Gid: ( 1000/nzhidkov)
+Контекст: unconfined_u:object_r:user_home_t:s0
+Доступ:        2026-10-04 22:15:28.372685339 +0300
+Модифицирован: 2026-10-04 22:13:01.729636900 +0300
+Изменён:       2026-10-04 22:15:01.564676484 +0300
+Создан:        2026-10-04 22:13:01.729636900 +0300
+./mychown cap_chown=ep
+
+
+/usr/share/loginfo/init_form_caller.py
+/usr/lib/polkit-1/polkit-agent-helper-1
+/usr/sbin/mount.nfs
+/usr/sbin/pam_timestamp_check
+/usr/sbin/unix_chkpwd
+/usr/sbin/grub2-set-bootflag
+/usr/sbin/userhelper
+/usr/libexec/xf86-video-intel-backlight-helper
+/usr/libexec/spice-gtk-x86_64/spice-client-glib-usb-acl-helper
+/usr/libexec/Xorg.wrap
+/usr/libexec/dbus-1/dbus-daemon-launch-helper
+/usr/bin/crontab
+/usr/bin/umount
+/usr/bin/chsh
+/usr/bin/newgrp
+/usr/bin/loginfo.sh
+/usr/bin/chfn
+/usr/bin/ksu
+/usr/bin/at
+/usr/bin/passwd
+/usr/bin/fusermount3
+/usr/bin/mount
+/usr/bin/su
+/usr/bin/join-to-domain.sh
+/usr/bin/pkexec
+/usr/bin/fusermount-glusterfs
+/usr/bin/sudo
+/usr/bin/chage
+/usr/bin/loginfo-gui
+/usr/bin/gpasswd
+/home/nzhidkov/HW1/mycat
+
+
+
+    PID  RUID  EUID RUSER    EUSER    COMMAND
+   1460  1000     0 nzhidkov root     fusermount3
